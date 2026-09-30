@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap');
+
+/* Force dark color scheme compatibility for all Streamlit elements */
+:root {
+    color-scheme: dark !important;
+}
+
+/* App Background & Typography */
+html, body, [data-testid="stAppViewContainer"], [data-testid="stHeader"], .stApp {
+    background-color: #0B0F19 !important;
+    background-image: 
+        radial-gradient(at 10% 10%, rgba(56, 189, 248, 0.08) 0px, transparent 50%),
+        radial-gradient(at 90% 90%, rgba(139, 92, 246, 0.08) 0px, transparent 50%) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    color: #F8FAFC !important;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"], [data-testid="stSidebar"] > div {
+    background-color: #0F172A !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #F8FAFC !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6, [data-testid="stMarkdownContainer"] p, span, label {
+    color: #F8FAFC !important;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    background: linear-gradient(135deg, #38BDF8 0%, #8B5CF6 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+h2, h3, h4 {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+}
+
+/* Metric Boxes */
+[data-testid="stMetricValue"] {
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    color: #38BDF8 !important;
+}
+
+[data-testid="stMetricLabel"] {
+    font-weight: 600 !important;
+    color: #94A3B8 !important;
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
+}
+
+/* Streamlit Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px !important;
+    background-color: rgba(15, 23, 42, 0.8) !important;
+    padding: 6px !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 44px !important;
+    border-radius: 8px !important;
+    color: #94A3B8 !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    padding: 0 16px !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #1E293B !important;
+    color: #38BDF8 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Inputs, Selectboxes, Radio, Sliders */
+div[data-baseweb="select"] > div, 
+div[data-baseweb="input"] > div, 
+input, textarea {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 8px !important;
+}
+
+div[role="option"], li[role="option"] {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+/* Dataframe & Tables */
+[data-testid="stDataFrame"], table {
+    background-color: #0F172A !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    color: #F8FAFC !important;
+}
+
+/* Radio button text */
+[data-testid="stMarkdownContainer"] label span {
+    color: #F8FAFC !important;
+}
+
+/* Custom Badges */
+.badge-blue {
+    background-color: rgba(56, 189, 248, 0.2);
+    color: #38BDF8;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-purple {
+    background-color: rgba(139, 92, 246, 0.2);
+    color: #A78BFA;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-green {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #34D399;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
